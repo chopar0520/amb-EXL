@@ -118,7 +118,7 @@ Public Class Form1
     Private Sub menuItemClose_Click(sender As Object, e As System.EventArgs) Handles menuItemClose.Click
         TabControl1.SelectedTab = TabPage1
         Console.WriteLine(TabControl1.TabIndex.ToString())
-        TabControl1.TabPages.Remove(value:=newTab,-1)
+        TabControl1.TabPages.Remove(value:=newTab)
     End Sub
 
     ' メッセージボックスで [いいえ] を選択した場合は、フォームが閉じられるのをキャンセル
